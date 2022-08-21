@@ -10,6 +10,6 @@ Console.WriteLine (a1 + ">" + a2);
 }
 else 
 {
-Console.Write ("Второе число больше первого");
+Console.WriteLine ("Второе число больше первого");
 Console.WriteLine (a2 + ">" + a1);
 }
