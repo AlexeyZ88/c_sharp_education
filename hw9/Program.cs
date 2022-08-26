@@ -1,21 +1,20 @@
-﻿//Задача 19
-/* Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-14212 -> нет
-12821 -> да
-23432 -> да */
-Console.Clear();
-Console.WriteLine("Введите значение:");
-string s = Console.ReadLine();
-char[] a = s.ToCharArray();
-char[] b = s.ToCharArray();
-Array.Reverse(b);
-bool isAqual=Enumerable.SequenceEqual(a, b);
 
-if (isAqual) 
+/* // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+6 -> да
+7 -> да
+1 -> нет */
+Console.WriteLine("Введите число от 1 до 7:");
+int NumOfDay = int.Parse(Console.ReadLine());
+string[] newArray1 = { "первый", "второй", "третий", "четвёртый", "пятый", "шестой", "седьмой" };
+string[] newArray2 = { "понедельник", "вторник", "среда", "четвёрг", "пятница", "суббота", "воскресенье" };
+string isHoly = "";
+if (NumOfDay == 6 || NumOfDay == 7)
 {
-    Console.WriteLine ("Выражение является палиндромом");
+    isHoly = "выходной";
 }
-else 
+else
 {
-    Console.WriteLine ("Выражение НЕ является палиндромом");
+    isHoly = "рабочий";
 }
+Console.WriteLine(newArray1[NumOfDay-1] + " день недели - " + newArray2[NumOfDay-1] + " - " + isHoly);
