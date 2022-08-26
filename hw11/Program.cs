@@ -1,0 +1,16 @@
+﻿Console.Clear();
+int[] array1 = new int[6];
+Console.WriteLine("Введите координату точки А по оси Х");
+array1[0] = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите координату точки А по оси Y");
+array1[1] = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите координату точки А по оси Z");
+array1[2] = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите координату точки А по оси X");
+array1[3] = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите координату точки А по оси Y");
+array1[4] = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите координату точки А по оси Z");
+array1[5] = int.Parse(Console.ReadLine());
+double coord = Math.Sqrt(Math.Pow(array1[0] - array1[3], 2) + Math.Pow(array1[1] - array1[4], 2) + Math.Pow(array1[2] - array1[5], 2));
+Console.WriteLine("Расстояние между точками = " + coord);
