@@ -11,11 +11,16 @@ for (int i = 0; i < a1; i++)
 {
     int a2 = rndm1.Next(100, 999);
     arr1[i] = a2;
-    Console.WriteLine(i + ")"+ arr1[i]);
-    if (a2 % 2 == 0)
+
+    if (i % 2 > 0)
     {
-        count=count+i;
+        Console.WriteLine(i + ")" + ">>" + arr1[i]);
+        count = count + arr1[i];
+    }
+    else
+    {
+        Console.WriteLine(i + ")" + arr1[i]);
     }
 
 }
-Console.WriteLine("Сумма индеков четных элементов массива - " + count);
+Console.WriteLine("Сумма элементов на нечетных позициях - " + count);
