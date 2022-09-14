@@ -56,7 +56,7 @@ void FindMinItem (int[] ArrayToFind)
 IndexOfMinValue = i;
     }
   }
-  Console.WriteLine($"трока с наименьшей суммой элементов №:{IndexOfMinValue+1}");
+  Console.WriteLine($"Cтрока с наименьшей суммой элементов №:{IndexOfMinValue+1}");
 }
 FillArray(NewArray);
 SumByRows(NewArray);
